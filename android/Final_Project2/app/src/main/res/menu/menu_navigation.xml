@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="主頁"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/Fridge"
+        android:title="冰箱"
+        android:icon="@drawable/ic_fridge_3"
+        />
+    <item
+        android:id="@+id/shopping_list"
+        android:title="採購"
+        android:icon="@drawable/ic_shopping_cart"/>
+    <item
+        android:id="@+id/User"
+        android:title="設定"
+        android:icon="@drawable/ic_user"/>
+
+
+</menu>

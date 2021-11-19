@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:visibility="visible"
+    tools:context=".dishes_info">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/gray"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|end"
+            app:maxLines="3"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/imv1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                android:src="@color/design_default_color_primary" />
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginTop="280dp"-->
+<!--                android:background="#77000000" />-->
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling_test" />
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/btn_back"
+        android:layout_width="20dp"
+        android:layout_height="99dp"
+        android:src="@drawable/icon_back"
+        app:fab_colorNormal="@color/white"
+        app:fab_label="返回上一頁"
+        app:fab_size="mini" />
+
+
+    <!--    <com.github.clans.fab.FloatingActionMenu-->
+    <!--        android:id="@+id/floatingActionMenu"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end"-->
+
+    <!--        app:menu_colorRipple="#8BDFD7">-->
+
+    <!--        <com.github.clans.fab.FloatingActionButton-->
+    <!--            android:id="@+id/button_Select02"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:fab_size="mini"-->
+    <!--            app:fab_colorNormal="#2196F3"-->
+    <!--            app:fab_colorPressed="#2196F3"-->
+    <!--            app:fab_colorRipple="#FFFFFF"-->
+    <!--            app:fab_label="健全者"-->
+    <!--            />-->
+    <!--        <com.github.clans.fab.FloatingActionButton-->
+    <!--            android:id="@+id/button_Select01"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:fab_size="mini"-->
+    <!--            app:fab_colorNormal="#4CAF50"-->
+    <!--            app:fab_colorPressed="#4CAF50"-->
+    <!--            app:fab_colorRipple="#FFFFFF"-->
+    <!--            app:fab_label="行動不便者"-->
+    <!--            />-->
+    <!--    </com.github.clans.fab.FloatingActionMenu>-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_collect"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        android:theme="@style/MyMaterialTheme"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end"-->
+    <!--        app:srcCompat="@android:drawable/btn_star_big_off" />-->
+    <!--    app:layout_anchor="@id/app_bar"-->
+    <!--    app:layout_anchorGravity="bottom|end"-->
+
+
+    <!--    <com.github.clans.fab.FloatingActionMenu-->
+    <!--        android:id="@+id/fab_menu"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:theme="@style/MyMaterialTheme"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:src="@drawable/fab_add"-->
+    <!--        app:fab_colorPressed="@color/black"-->
+    <!--        app:menu_colorNormal="@color/black"-->
+    <!--        app:menu_openDirection="down"-->
+    <!--        app:menu_labels_position="left"-->
+    <!--        >-->
+
+
+    <TextView
+        android:id="@+id/tv_fid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_did"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="10dp"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_icon="@drawable/ic_kitchen_pack_cooking_svgrepo_com"
+        app:menu_labels_position="left"
+        app:menu_openDirection="down">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_favorite_24"
+            app:fab_colorNormal="@color/colorPrimary"
+
+            app:fab_label="收藏食譜"
+            app:fab_size="normal" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fruits_pear_svgrepo_com"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_label="所需食材"
+            app:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_spa_bowl_to_mix_treatments_ingredients_svgrepo_com"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_label="步驟"
+            app:fab_size="normal" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_ingredient"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="75dp"-->
+
+    <!--        app:srcCompat="@drawable/ic__18_recipes"-->
+    <!--        android:theme="@style/MyMaterialTheme"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end" />-->
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_step"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="135dp"-->
+    <!--        app:srcCompat="@drawable/ic_list"-->
+    <!--        android:theme="@style/MyMaterialTheme"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end"-->
+    <!--        android:textAlignment="center"/>-->
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/btn_back"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="195dp"-->
+    <!--        app:srcCompat="?attr/homeAsUpIndicator"-->
+    <!--        android:theme="@style/MyMaterialTheme"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".recipe_ingredient"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<include layout="@layout/toolbar_contain"/>
+
+        <ListView
+
+            android:id="@+id/list1"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:background="#1A000000"
+            android:text="缺少的食材"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+
+
+            <ListView
+
+                android:id="@+id/list2"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" >
+
+            </ListView>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

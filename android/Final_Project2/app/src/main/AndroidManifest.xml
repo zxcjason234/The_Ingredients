@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.final_project"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme"
+        >
+
+        <activity android:name=".recipe_ingredient_v2"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_step_detailed"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".shopping_recommed"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".set_user_hobby"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".set_user_hobby_register"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".ingredient_scan"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".set_member"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".user_published"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".add_dishes"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".contain_set"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".shopping_list"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_recommend"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_collection"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".User_setting"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Fridge"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_search_activity"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_info"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".dishes_info_rec_random"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".test1"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+<!--        <activity android:name=".recipe_ingredient"-->
+<!--            android:launchMode="singleTask"/>-->
+
+<!--        <activity android:name=".recipe_ingredient_rec_random"-->
+<!--            android:launchMode="singleTask"/>-->
+
+        <activity android:name=".recipe_step"
+            android:launchMode="singleTask"/>
+
+
+        <activity android:name=".Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".AfterLogin" />
+        <activity android:name=".insertfridge" />
+        <activity android:name=".EditNote" />
+
+        <activity android:name=".MainActivity"/>
+
+    </application>
+
+</manifest>
