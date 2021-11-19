@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopping_list">
+
+    <TextView
+        android:id="@+id/txt_member_id_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txt_fridge_id_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="採購清單"
+            android:textColor="#FF5722"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.androidbuts.multispinnerfilter.SingleSpinnerSearch
+                        android:id="@+id/spn_shopping"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:scrollbarSize="25dp"
+                        app:hintText="選擇食材"
+                        tools:layout_gravity="center" />
+
+                    <!--                    <EditText-->
+                    <!--                        android:id="@+id/Add_Ingredient"-->
+                    <!--                        android:layout_width="40dp"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:ems="10"-->
+                    <!--                        android:hint="食材名稱"-->
+                    <!--                        android:inputType="textMultiLine"-->
+                    <!--                        android:textSize="20sp" />-->
+                </LinearLayout>
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="1"
+                    app:columnOrderPreserved="false"
+                    app:rowCount="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Add_Ingredient_Quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="選擇數量"
+                            android:inputType="number"
+                            android:textColorHint="#000000"
+                            android:textSize="15dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iconadd"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            app:cardCornerRadius="60dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="-2dp"
+                                    app:srcCompat="@drawable/ic_add_to_cart_new" />
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.gridlayout.widget.GridLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/Add_Ingredient_Quantity"-->
+<!--                        android:layout_width="235dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:ems="10"-->
+<!--                        android:gravity="center"-->
+<!--                        android:hint="選擇數量"-->
+<!--                        android:inputType="number"-->
+<!--                        android:textSize="25sp" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iconadd"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        app:srcCompat="@drawable/ic_add_shopping" />-->
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/purchasinglist_lv"
+                android:layout_width="340dp"
+                android:layout_height="519dp"
+                android:layout_gravity="center|top"
+                android:layout_weight="1"
+                android:background="#F3F8F8"
+                android:textSize="48px">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_shoping_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/design_default_color_on_primary"
+        app:itemIconTint="@drawable/select"
+        app:itemTextColor="@drawable/select"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

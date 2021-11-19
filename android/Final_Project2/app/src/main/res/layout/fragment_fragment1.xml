@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="314dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1.掃描條碼查詢此食材"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lin_scan_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/textView15"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="掃描條碼"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="15dp"-->
+                    <!--                        android:textStyle="bold" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/bt_scan_scan"
+                android:layout_width="308dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_rectangle2"
+                android:src="@drawable/ic_barcode_1004" />
+
+
+            <LinearLayout
+                android:id="@+id/lin_scan"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_grocery" />
+
+                    <TextView
+                        android:id="@+id/tv_scan_title"
+                        android:layout_width="225dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="食品名稱"
+                        android:textColor="@color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_barcode_3" />
+
+                    <TextView
+                        android:id="@+id/tv_scan_barcode"
+                        android:layout_width="225dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center|left"
+                        android:hint="食品條碼"
+                        android:textColor="@color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="175dp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                    <TextView
+                        android:id="@+id/txtres_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/hello"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="2.設定食材有效日期"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LY_scan_day"
+                android:layout_width="310dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                tools:visibility="invisible">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView3"-->
+                <!--                    android:layout_width="108dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="有效期限"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="100dp">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt_scan_day"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_calendar" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_scan_day"
+                    android:layout_width="225dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center|left"
+                    android:hint="有效期限"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_scan_insert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="280dp"
+                        android:orientation="vertical"
+                        android:visibility="invisible"
+                        tools:visibility="invisible">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="100dp">
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/bt_scan_insert"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="加入食材"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

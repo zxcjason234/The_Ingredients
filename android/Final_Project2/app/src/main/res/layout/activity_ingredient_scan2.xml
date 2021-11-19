@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingredient_scan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/toolbar_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="冰箱編號 "
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_scan_fridgeID"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="TextView"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="使用者 "
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_scan_UserID"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="TextView"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LY_scan_title"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                tools:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="食品名稱"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.androidbuts.multispinnerfilter.SingleSpinnerSearch
+                    android:id="@+id/sp_scan_title"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LY_scan_type"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-35dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="食材種類"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.androidbuts.multispinnerfilter.SingleSpinnerSearch
+                    android:id="@+id/sp_scan_type"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp" />
+
+            </LinearLayout>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_menu"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="-50dp"-->
+<!--                android:visibility="invisible"-->
+<!--                app:srcCompat="@drawable/ic_menu_menu" />-->
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_ing_add"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    tools:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="食品名稱"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_scan_title"
+                            android:layout_width="175dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="請輸入食品名稱"
+                            android:inputType="textPersonName"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="食品條碼"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/ed_scan_barcode"
+                            android:layout_width="175dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_scan"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-90dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    tools:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="食品名稱"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_scan_title"
+                            android:layout_width="175dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="食品條碼"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_scan_barcode"
+                            android:layout_width="175dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_foodpic"
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-90dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_menu"
+                        tools:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LY_scan_day"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="108dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="有效期限"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_scan_day"
+                    android:layout_width="134dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/bt_scan_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LY_bt_add"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lin_scan_scan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="155dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/bt_scan_scan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                app:srcCompat="@drawable/ic_barcode" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="掃描條碼"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_drop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-65dp"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            tools:visibility="visible">
+
+                            <ImageButton
+                                android:id="@+id/bt_drop_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                app:srcCompat="@drawable/ic_drop_down_menu" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="選取食材"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_scan_insert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/bt_scan_insert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                app:srcCompat="@drawable/ic_add" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="加入食材"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-85dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lin_scan_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="155dp"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageButton
+                            android:id="@+id/bt_scan_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            app:srcCompat="@drawable/ic_barcode" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="掃描條碼"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_scan_insert_DB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageButton
+                            android:id="@+id/bt_scan_insert_DB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            app:srcCompat="@drawable/ic_add_to_cart" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="加入食材"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtres_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="沒有此食材?請點此新增至資料庫"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtres_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-30dp"
+                android:text="已有該食材?返回新增冰箱頁面"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/design_default_color_on_primary"
+        app:itemIconTint="@drawable/select"
+        app:itemTextColor="@drawable/select"
+        app:menu="@menu/menu_navigation" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AmountView">
+        <!-- 左右2邊+-按鈕的寬度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中間TextView的寬度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension" />
+        <attr name="btnTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

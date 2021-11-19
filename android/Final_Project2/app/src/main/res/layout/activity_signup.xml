@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="註冊帳號"
+                android:textColor="#FF5722"
+                android:textSize="45sp"
+                tools:targetApi="jelly_bean" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/registration" />
+
+            <EditText
+                android:id="@+id/edt_SignUp_memberID"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/memberid"
+                android:background="@drawable/login_input"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="會員編號"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edt_SignUp_memberName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/membername"
+                android:background="@drawable/login_input"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="會員姓名"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edt_SignUp_memberpass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/memberpass"
+                android:background="@drawable/login_input"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="會員密碼"
+                android:inputType="textPassword"
+                android:textSize="25sp" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFridgeName" />
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="註冊"
+                android:textSize="25sp"
+                android:background="@drawable/button"
+                app:backgroundTint="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/txtloginback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="有帳號?登入帳號"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

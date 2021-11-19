@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipe_step"
+    android:orientation="vertical"
+    >
+<!--    app:navigationIcon="?attr/actionModeCloseDrawable"-->
+    <include layout="@layout/tb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_step"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:autoSizeTextType="uniform"-->
+        <!--            android:textAlignment="viewStart"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textStyle="bold" />-->
+
+
+        <ListView
+            android:id="@+id/list_step"
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:divider="@color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:dividerHeight="30dp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

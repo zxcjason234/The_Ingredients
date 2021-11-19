@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/purchasinglist_title"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Ingredient"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Qua"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="份"
+
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnADDIngredients"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_plus1" />
+
+            <ImageButton
+                android:id="@+id/btnDeleteIngredients"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_minus_1_" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="false"-->
+    <!--        android:focusableInTouchMode="true" />-->
+
+
+</LinearLayout>

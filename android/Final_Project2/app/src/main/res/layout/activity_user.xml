@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_setting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtEditFamilyNoteTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="使用者設定"
+                    android:textColor="#FF5722"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_fridge_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="冰箱編號 "
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_member_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="使用者"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_fridge_id_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/txt_member_id_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="TextView"
+                            android:textColor="#000000"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="205dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="1"
+                    app:columnOrderPreserved="false"
+                    app:rowCount="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_member_id_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="新增成員編號"
+                            android:inputType="textPersonName"
+                            android:textColorHint="#000000" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iconadd"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="12dp"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/icon_addperson" />
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_fridge_id_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:ems="10"
+                            android:hint="新冰箱名稱"
+                            android:inputType="textPersonName"
+                            android:textColorHint="#000000" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_edit_fridge"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="12dp"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/icon_fridgename" />
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </androidx.gridlayout.widget.GridLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="315dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/addperson"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        app:srcCompat="@drawable/icon_addperson" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edt_member_id_user"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="新增成員編號"-->
+<!--                        android:inputType="textPersonName" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="315dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/edit_fridge"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        app:srcCompat="@drawable/icon_fridgename" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edt_fridge_id_user"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="新冰箱名稱"-->
+<!--                        android:inputType="textPersonName" />-->
+
+<!--                </LinearLayout>-->
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="338dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="2"
+                    app:columnOrderPreserved="false"
+                    app:rowCount="2">
+
+                    <!--                    <androidx.cardview.widget.CardView-->
+                    <!--                        android:id="@+id/btn_user_published"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="12dp"-->
+                    <!--                        app:cardCornerRadius="120dp"-->
+                    <!--                        app:cardElevation="30dp"-->
+                    <!--                        app:layout_columnWeight="1"-->
+                    <!--                        app:layout_rowWeight="1">-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:orientation="vertical"-->
+                    <!--                            android:padding="16dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="80dp"-->
+                    <!--                                android:layout_height="80dp"-->
+                    <!--                                app:srcCompat="@drawable/icon_post" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:text="發佈內容"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="18sp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+
+                    <!--                        </LinearLayout>-->
+
+
+                    <!--                    </androidx.cardview.widget.CardView>-->
+
+                    <!--                    <androidx.cardview.widget.CardView-->
+                    <!--                        android:id="@+id/btn_collection"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="12dp"-->
+                    <!--                        app:cardCornerRadius="120dp"-->
+                    <!--                        app:cardElevation="30dp"-->
+                    <!--                        app:layout_columnWeight="1"-->
+                    <!--                        app:layout_rowWeight="1">-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:orientation="vertical"-->
+                    <!--                            android:padding="16dp">-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:layout_width="80dp"-->
+                    <!--                                android:layout_height="80dp"-->
+                    <!--                                app:srcCompat="@drawable/icon_dishcollect" />-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:text="食譜收藏"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="18sp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+
+                    <!--                        </LinearLayout>-->
+
+
+                    <!--                    </androidx.cardview.widget.CardView>-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_user_hobby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="120dp"
+                        app:cardElevation="30dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/icon_set" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="個人偏好"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_set_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="120dp"
+                        app:cardElevation="30dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/persondata_user" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="個人資料"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_quit_fridge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="120dp"
+                        app:cardElevation="30dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/icon_exit" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="退出冰箱"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="120dp"
+                        app:cardElevation="30dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/icon_logout" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="帳號登出"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/design_default_color_on_primary"
+        app:itemIconTint="@drawable/select"
+        app:itemTextColor="@drawable/select"
+        app:menu="@menu/menu_navigation" />
+
+
+</RelativeLayout>

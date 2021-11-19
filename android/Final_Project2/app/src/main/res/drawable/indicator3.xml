@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+
+    >
+
+<!--    &lt;!&ndash; 边框 &ndash;&gt;-->
+<!--    <stroke-->
+<!--        android:color="@color/black"-->
+<!--        android:width="5dp"/>-->
+<!--    <solid android:color="@color/colorPrimary" />-->
+<!--    &lt;!&ndash; 矩形梯度颜色 &ndash;&gt;-->
+<!--&lt;!&ndash;    <gradient&ndash;&gt;-->
+<!--&lt;!&ndash;        android:startColor="#FF0000"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:centerColor="#FFFF00"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:endColor="#0000FF"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:angle="90"/>&ndash;&gt;-->
+
+<!--    &lt;!&ndash; 4 个角的角度半径 &ndash;&gt;-->
+<!--    <corners-->
+<!--        android:bottomLeftRadius="20dp"-->
+<!--        android:topLeftRadius="20dp"-->
+<!--        android:bottomRightRadius="20dp"-->
+<!--        android:topRightRadius="20dp"/>-->
+
+    <corners android:radius="25dp"/>    <gradient
+    android:type="linear"
+    android:angle="45"
+    android:startColor="@color/colorPrimaryDark"
+    android:endColor="@color/colorPrimary"/>
+
+</shape>
