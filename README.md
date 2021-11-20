@@ -77,7 +77,7 @@ Android Studio(7.0以上)、MySQL、Python、Java、PHP進行開發。
 - https://youtu.be/S8cv9-FleDg
 - https://youtu.be/R7P-pXRvmnk
 
-##### 食譜網站
+## 食譜網站
 **特別感謝各家食譜網站授權**
 - 小蝶的小小廚房: https://asd77723.pixnet.net/blog
 - 小薛食譜: https://yoti.life/category/recipe/
