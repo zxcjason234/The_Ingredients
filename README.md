@@ -61,3 +61,8 @@ https://data.taipei/#/dataset/detail?id=e8d4f1bb-164a-4f6d-9c21-f2754656d4e4
 5.	飲食偏好設定:
 透過問卷設定功能讓使用者記錄自己不喜歡的食材或吃葷吃素，使本系統能夠更精準統計使用者行為，讓使用者在推薦食譜功能上有更棒的瀏覽體驗。
 
+## 系統開發工具與技術
+1.	硬體:
+Windows系統桌上型電腦、Android手持裝置各一台。
+2.	軟體:
+Android Studio(7.0以上)、MySQL、Python、Java、PHP進行開發。
