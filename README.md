@@ -75,3 +75,4 @@ Android Studio(7.0以上)、MySQL、Python、Java、PHP進行開發。
 
 ##### Youtube連結
 https://youtu.be/S8cv9-FleDg
+https://youtu.be/R7P-pXRvmnk
