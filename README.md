@@ -51,6 +51,7 @@ https://data.taipei/#/dataset/detail?id=e8d4f1bb-164a-4f6d-9c21-f2754656d4e4
 
 3.	★適性化推薦:
 存放在冰箱中的各式食材，透過本系統提供的採購分析模組，推薦符合需求的食譜以方便進行採買，以及透過冰箱現有食材來推薦可供烹煮的食譜，讓推薦的內容更貼近使用者的需求。
+
 ![image](https://user-images.githubusercontent.com/43669016/142720277-b6b99774-4861-4b2b-bfac-c9681f6651cd.png)
 ![image](https://user-images.githubusercontent.com/43669016/142720290-ad8716ad-73f0-4816-bf0a-557ef301e05a.png)
 
