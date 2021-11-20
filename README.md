@@ -66,3 +66,6 @@ https://data.taipei/#/dataset/detail?id=e8d4f1bb-164a-4f6d-9c21-f2754656d4e4
 Windows系統桌上型電腦、Android手持裝置各一台。
 2.	軟體:
 Android Studio(7.0以上)、MySQL、Python、Java、PHP進行開發。
+
+## 系統使用對象
+使用對象為一般家庭，讓使用者能夠更有效率管理自己冰箱食材的狀態，針對食材設定過期日期給予適當的提醒和購買需求，並利用使用者許願池讓使用者更能了解需要購買事項，給予使用者更有效的管理冰箱食材。
