@@ -51,8 +51,9 @@ https://data.taipei/#/dataset/detail?id=e8d4f1bb-164a-4f6d-9c21-f2754656d4e4
 
 3.	★適性化推薦:
 存放在冰箱中的各式食材，透過本系統提供的採購分析模組，推薦符合需求的食譜以方便進行採買，以及透過冰箱現有食材來推薦可供烹煮的食譜，讓推薦的內容更貼近使用者的需求。
+![image](https://user-images.githubusercontent.com/43669016/142720277-b6b99774-4861-4b2b-bfac-c9681f6651cd.png)
+![image](https://user-images.githubusercontent.com/43669016/142720290-ad8716ad-73f0-4816-bf0a-557ef301e05a.png)
 
-![image](https://user-images.githubusercontent.com/43669016/142720206-baa00e9b-8d76-4c51-becd-33d4a4ab1410.png)  ![image](https://user-images.githubusercontent.com/43669016/142720143-9e14da72-e651-4c14-8d67-111e6069ab2f.png)
 
 4.	即期品提醒:
 為了讓使用者更好管理自身的冰箱，本系統設置提醒功能，透過使用者自行設置食材時間，讓使用者能夠透過手機即時且準確的管理食材是否過期。
